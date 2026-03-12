@@ -1,0 +1,116 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "calendário litúrgico",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "ColectaDoDia",
+          "slots": [],
+          "samples": [
+            "qual é a coleta de hoje",
+            "leia a coleta do dia",
+            "me diga a coleta de hoje",
+            "qual a coleta do dia",
+            "coleta do dia",
+            "coleta de hoje",
+            "qual é a coleta",
+            "leia a coleta",
+            "me leia a coleta de hoje",
+            "quero ouvir a coleta",
+            "recite a coleta do dia",
+            "diga a coleta de hoje"
+          ]
+        },
+        {
+          "name": "CalendarioHoje",
+          "slots": [],
+          "samples": [
+            "que dia do calendário litúrgico é hoje",
+            "em que tempo litúrgico estamos",
+            "qual é o tempo litúrgico de hoje",
+            "que tempo litúrgico é hoje",
+            "qual é o dia litúrgico de hoje",
+            "o que é hoje no calendário litúrgico",
+            "qual a cor litúrgica de hoje",
+            "qual é a celebração de hoje",
+            "qual é o tempo litúrgico",
+            "em que tempo estamos",
+            "que dia litúrgico é hoje",
+            "me fale sobre o calendário de hoje",
+            "o que tem no calendário hoje",
+            "qual é o calendário de hoje"
+          ]
+        },
+        {
+          "name": "DataLiturgica",
+          "slots": [
+            {
+              "name": "dataLiturgica",
+              "type": "LISTA_DATAS_LITURGICAS",
+              "samples": [
+                "{dataLiturgica}",
+                "quando é {dataLiturgica}",
+                "quando cai {dataLiturgica}",
+                "em que dia é {dataLiturgica}",
+                "qual é a data de {dataLiturgica}",
+                "me diga quando é {dataLiturgica}"
+              ]
+            }
+          ],
+          "samples": [
+            "quando é {dataLiturgica}",
+            "quando cai {dataLiturgica}",
+            "em que dia é {dataLiturgica}",
+            "qual a data de {dataLiturgica}",
+            "qual é a data de {dataLiturgica}",
+            "me diga quando é {dataLiturgica}",
+            "quando será {dataLiturgica}",
+            "que dia cai {dataLiturgica}",
+            "que dia é {dataLiturgica} esse ano",
+            "quando é {dataLiturgica} este ano"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "name": "LISTA_DATAS_LITURGICAS",
+          "values": [
+            { "name": { "value": "Páscoa", "synonyms": ["domingo de Páscoa", "ressurreição", "domingo da ressurreição"] } },
+            { "name": { "value": "Pentecostes", "synonyms": ["domingo de Pentecostes"] } },
+            { "name": { "value": "Quarta-feira de Cinzas", "synonyms": ["Cinzas", "quarta de cinzas", "dia de cinzas"] } },
+            { "name": { "value": "Domingo de Ramos", "synonyms": ["Ramos", "domingo das palmas"] } },
+            { "name": { "value": "Ascensão", "synonyms": ["ascensão do Senhor", "dia da ascensão"] } },
+            { "name": { "value": "Advento", "synonyms": ["primeiro domingo do Advento", "início do Advento", "primeiro Advento"] } },
+            { "name": { "value": "Natal", "synonyms": ["natividade", "nascimento do Senhor", "dia de Natal"] } },
+            { "name": { "value": "Epifania", "synonyms": ["três reis", "Reis Magos", "dia de Reis"] } },
+            { "name": { "value": "Trindade", "synonyms": ["domingo da Trindade", "Santíssima Trindade"] } },
+            { "name": { "value": "Corpus Christi", "synonyms": ["corpo de Cristo", "corpo e sangue de Cristo"] } },
+            { "name": { "value": "Sexta-feira Santa", "synonyms": ["sexta santa", "sexta-feira da paixão"] } },
+            { "name": { "value": "Domingo de Páscoa", "synonyms": [] } },
+            { "name": { "value": "Sábado de Aleluia", "synonyms": ["vigília pascal"] } }
+          ]
+        }
+      ]
+    }
+  }
+}

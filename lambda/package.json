@@ -1,0 +1,18 @@
+{
+  "name": "estevao-liturgical-alexa",
+  "version": "1.0.0",
+  "description": "Alexa Skill for the Estevão Liturgical Calendar API",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm install --omit=dev",
+    "deploy": "npm run build && zip -r ../skill.zip ."
+  },
+  "dependencies": {
+    "ask-sdk-core": "^2.14.0",
+    "ask-sdk-model": "^1.91.0",
+    "axios": "^1.7.0"
+  },
+  "devDependencies": {
+    "ask-sdk-local-debug": "^1.1.1"
+  }
+}

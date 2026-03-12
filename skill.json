@@ -1,0 +1,45 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "pt-BR": {
+          "name": "Calendário Litúrgico Anglicano",
+          "summary": "Consulte o Calendário Litúrgico da Igreja Episcopal Anglicana do Brasil.",
+          "description": "Com esta skill você pode:\n• Ouvir a coleta do dia\n• Saber em que tempo litúrgico estamos\n• Perguntar quando cai uma data litúrgica como Páscoa, Pentecostes, Advento e outras\n\nOs dados são fornecidos pela API Estevão (caminhoanglicano.com.br).",
+          "examplePhrases": [
+            "Alexa, abrir calendário litúrgico",
+            "Alexa, pedir ao calendário litúrgico a coleta de hoje",
+            "Alexa, perguntar ao calendário litúrgico quando é Pentecostes"
+          ],
+          "keywords": [
+            "liturgia", "anglicano", "calendário", "coleta", "oração", "IEAB", "Páscoa", "Advento"
+          ],
+          "smallIconUri": "https://s3.amazonaws.com/CAPS-SSE/ask_sdk_test_upload_icon1.png",
+          "largeIconUri": "https://s3.amazonaws.com/CAPS-SSE/ask_sdk_test_upload_icon2.png"
+        }
+      },
+      "isAvailableWorldwide": false,
+      "testingInstructions": "Diga: 'qual é a coleta de hoje' ou 'quando é Pentecostes'.",
+      "category": "RELIGION_AND_SPIRITUALITY",
+      "distributionCountries": ["BR"]
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "sourceDir": "lambda",
+          "uri": "ask-custom-estevao-liturgical-alexa-default"
+        },
+        "interfaces": []
+      }
+    },
+    "manifestVersion": "1.0",
+    "permissions": [],
+    "privacyAndCompliance": {
+      "allowsPurchases": false,
+      "usesPersonalInfo": false,
+      "isChildDirected": false,
+      "isExportCompliant": true,
+      "containsAds": false
+    }
+  }
+}
